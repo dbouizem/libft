@@ -6,16 +6,15 @@
 /*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:45:31 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/12 16:16:11 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/11/13 11:13:23 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void	*s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char *p;
+	unsigned char	*cs;
 
-	p = (unsigned cahr *) s;
-	while (--n)
-		s++ = '\0';
-	return (s);	
+	cs = (unsigned char *) s;
+	while (n--)
+		*cs++ = '\0';
 }
