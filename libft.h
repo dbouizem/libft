@@ -1,6 +1,10 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
+//Test----
+#include <stdio.h>
+//--------
+
 #include <stddef.h>
 
 size_t	ft_strlcpy(char *dest, const char *src,  size_t n);
