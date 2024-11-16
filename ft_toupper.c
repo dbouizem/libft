@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 18:50:56 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/16 13:58:04 by dbouizem         ###   ########.fr       */
+/*   Created: 2024/11/15 16:45:45 by dbouizem          #+#    #+#             */
+/*   Updated: 2024/11/15 16:51:50 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-char	*ft_strchr(const char *s, int c)
+int	ft_toupper(int c)
 {
-	while (*s && *s != c)
-		s++;
-	if (c == *s)
-		return ((char *)s);
-	return (0);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	else
+		return (c);
 }
-/*#include <stdio.h>
-int	main()
-{
-	char src[] = "Coucou";
-	int c = 'o';
-	char *result = ft_strchr(src, c);
-	printf("result: %s", result);
-	return (0);
-}*/

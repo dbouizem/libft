@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 18:50:56 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/16 13:58:04 by dbouizem         ###   ########.fr       */
+/*   Created: 2024/11/16 15:22:18 by dbouizem          #+#    #+#             */
+/*   Updated: 2024/11/16 16:59:02 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-char	*ft_strchr(const char *s, int c)
+int	ft_strcmp(const char *s1, const char *s2, size_t n)
 {
-	while (*s && *s != c)
-		s++;
-	if (c == *s)
-		return ((char *)s);
+	while (*s1 && *s2 && n--)
+	{
+		if (*s1 != *s2)
+			return ((unsigned char)*s1 - (unsigned char)*s2);
+		s1++;
+		s2++;
+	}
 	return (0);
 }
-/*#include <stdio.h>
+
 int	main()
 {
-	char src[] = "Coucou";
-	int c = 'o';
-	char *result = ft_strchr(src, c);
-	printf("result: %s", result);
-	return (0);
-}*/
+	char	s1[] = "ABCD";
+	char	s2[]
+}
