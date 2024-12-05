@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 17:24:55 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/15 16:32:54 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/03 18:11:33 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+** La fonction ft_strlcat() ajoute la chaîne src à la fin de la chaîne dest,
+** en garantissant que le résultat est toujours terminé par un caractère nul '\0'
+** Compilation:
+*/
 
 #include "libft.h"
 
@@ -34,26 +39,15 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	dest[j] = '\0';
 	return (lend + lens);
 }
-#include <stdio.h>
-int main(void)
+/*
+int	main()
 {
-        char    dst1[30] = "Hello ";
-        char    dst2[30] = "Hello ";
-        char    src[] = "World!";
-        size_t  result;
+	char    dst[30] = "Testting ";
+	char    *src = "ft_strlcat";
+	size_t  result;
 
-        // Test normal
-        printf("Test 1:\n");
-        result = ft_strlcat(dst1, src, 30);
-        printf("dst: %s\n", dst1);
-        printf("returned: %zu\n\n", result);
-
-        // Test avec taille limitée
-        printf("Test 2:\n");
-        result = ft_strlcat(dst2, src, 8);
-        printf("dst: %s\n", dst2);
-        printf("returned: %zu\n", result);
-
-        return (0);
-}
-
+	result = ft_strlcat(dst, src, 30);
+	printf("dst: %s\n", dst);
+	printf("returned: %zu\n", result);
+	return (0);
+}*/

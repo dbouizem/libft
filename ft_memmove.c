@@ -9,6 +9,14 @@
 /*   Updated: 2024/11/14 15:45:29 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+** memmove -- copier la chaîne d'octets
+**
+** La fonction memmove() copie len octets de la chaîne src vers la chaîne dst.
+** Compilation: gcc -Wall -Wextra -Werror ft_memmove.c ft_memcpy.c
+*/
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, void *src, size_t n)
 {
@@ -25,9 +33,16 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 			*--cdest = *--csrc;
 	}
 	else
-	{
-		while (n--)
-		*cdest++ = *csrc++;
-	}
+		ft_memcpy(cdest, csrc, n);
 	return (dest);
 }
+/*
+int	main ()
+{
+	char	*str = "Testting ft_memmove";
+	char	dest[10];
+	printf("Before memmove: %s\n", dest);
+	ft_memmove(dest, str, 5);
+	printf("After memmove: %s\n", dest);
+	return (0);
+}*/

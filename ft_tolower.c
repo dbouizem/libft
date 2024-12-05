@@ -9,6 +9,11 @@
 /*   Updated: 2024/11/15 16:56:09 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+** ft_tolower -- convertit une lettre majuscule en minuscule
+*/
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -17,3 +22,15 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
+/*
+int	main()
+{
+	int	c;
+	c = 65;
+	while (c <= 90)
+	{
+		printf("Original: %c, Result: %c\n", c, ft_tolower(c));
+		c++;
+	}
+	return (0);
+}*/

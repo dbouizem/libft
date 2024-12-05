@@ -9,21 +9,29 @@
 /*   Updated: 2024/11/16 16:59:02 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+** ft_strncmp -- compare les n premiers caractères de deux chaînes
+*/
 
-int	ft_strcmp(const char *s1, const char *s2, size_t n)
+#include "libft.h"
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while (*s1 && *s2 && n--)
-	{
-		if (*s1 != *s2)
-			return ((unsigned char)*s1 - (unsigned char)*s2);
-		s1++;
-		s2++;
-	}
-	return (0);
-}
+	size_t	i;
 
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (i < n - 1 && s1[i] && s2[i] && s1[i] == s2[i])
+		i++;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+}
+/*
 int	main()
 {
 	char	s1[] = "ABCD";
-	char	s2[]
-}
+	char	s2[] = "AE";
+	int result = ft_strncmp(s1, s2, 3);
+	printf("result = %d",result);
+	return (0);
+}*/

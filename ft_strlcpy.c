@@ -9,6 +9,10 @@
 /*   Updated: 2024/11/15 16:01:08 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+** ft_strlcpy -- copie une chaîne avec sécurité de taille
+** Compilatin: gcc -Wall -Wextra -Werror ft_strlcpy.c ft_strlen.c
+*/
 
 #include "libft.h"
 
@@ -17,8 +21,10 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	size_t	i;
 	size_t	src_len;
 
-	src_len = ft_strlen(src);
 	i = 0;
+	src_len = ft_strlen(src);
+	if (!dest || !src)
+		return (0);
 	if (size == 0)
 		return (src_len);
 	while (src[i] && i < size - 1)
@@ -32,11 +38,10 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 /*int	main()
 {
         char dest[15];
-        char *src = "Hello, World!";
-        size_t size = 15;
+        char *src = "Testting ft_strlcpy";
         size_t len;
 
-        len = ft_strlcpy(dest, src, size);
+        len = ft_strlcpy(dest, src, 15);
         printf("src: %s\n", src);
         printf("dest: %s\n", dest);
         printf("len: %zu\n", len);

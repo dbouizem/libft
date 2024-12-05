@@ -9,8 +9,12 @@
 /*   Updated: 2024/11/16 13:58:04 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+** ft_strchr -- localise la première occurrence d'un caractère dans une chaîne
+*/
 
-//#include "libft.h"
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s && *s != c)
@@ -19,10 +23,10 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-/*#include <stdio.h>
+/*
 int	main()
 {
-	char src[] = "Coucou";
+	char *src = "Coucou";
 	int c = 'o';
 	char *result = ft_strchr(src, c);
 	printf("result: %s", result);
