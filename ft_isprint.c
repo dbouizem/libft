@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 19:09:15 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/11 19:17:09 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:28:09 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** isprint -- test printing character (caractère d'espace inclus)
+** ft_isprint - test printing character (caractère d'espace inclus).
 */
 
 #include "libft.h"

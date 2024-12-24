@@ -6,11 +6,13 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 00:40:06 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/02 00:40:10 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:19:56 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** ft_strdup - Duplique une chaîne de caractères
+** ft_strdup - duplique une chaîne de caractères.
+**
 ** Compilation: gcc -Wall -Wextra -Werror ft_calloc.c ft_memcpy.c
 ** ft_strdup.c ft_memset.c ft_strlen.c
 */

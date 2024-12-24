@@ -1,41 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/27 16:42:19 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/22 07:25:53 by dbouizem         ###   ########.fr       */
+/*   Created: 2024/12/20 04:58:48 by dbouizem          #+#    #+#             */
+/*   Updated: 2024/12/22 07:21:53 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** ft_memcmp - compare deux zones mémoire byte par byte.
+** ft_putendl_fd - ecrit une chaîne de caractères suivie d'un saut de ligne
+** sur un descripteur de fichier spécifié.
 */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+void	ft_putendl_fd(char *s, int fd)
 {
-	const unsigned char	*ptr1;
-	const unsigned char	*ptr2;
-
-	ptr1 = (const unsigned char *)s1;
-	ptr2 = (const unsigned char *)s2;
-	while (n--)
+	if (!s)
+		return ;
+	while (*s)
 	{
-		if (*ptr1 != *ptr2)
-			return (*ptr1 - *ptr2);
-		ptr1++;
-		ptr2++;
+		write(fd, s, 1);
+		s++;
 	}
-	return (0);
+	write(fd, "\n", 1);
 }
 /*int	main()
 {
-	const char *str1 = "Testting";
-	const char *str2 = "memcmp";
-	printf("ft_memcmp: %d\n", ft_memcmp(str1, str2, ft_strlen(str1)));
+	ft_putendl_fd("ABCD", 1);
+	ft_putendl_fd("Error message!", 2);
 	return (0);
 }*/

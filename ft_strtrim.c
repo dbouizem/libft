@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrim.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 05:34:51 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/04 05:34:55 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:13:16 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** strtrim  éliminer les espaces (ou d'autres caractères spécifiques)
+** ft_strtrim - éliminer les espaces (ou d'autres caractères spécifiques)
 ** au début et à la fin d'une chaîne de caractères.
 **
 ** Compilation: gcc -Wall -Wextra -Werror ft_strtrim.c ft_strlen.c ft_strchr.c
@@ -46,6 +47,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	else
 		printf("Error\n");
-	
+
 	return (0);
 }*/

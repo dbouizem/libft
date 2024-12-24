@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 18:32:49 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/11 18:36:06 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:28:34 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** isascii -- test du caractère ASCII
+** ft_isascii - test du caractère ASCII.
 */
 
 #include "libft.h"

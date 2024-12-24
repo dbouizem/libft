@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 18:22:12 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/11 18:24:07 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:27:27 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** isdigit, isnumber -- test de caractères décimaux
+** ft_isdigit - test de caractères décimaux.
 */
 
 #include "libft.h"

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 14:02:17 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/14 15:45:29 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:24:18 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** memmove -- copier la chaîne d'octets
+** ft_memmove - copie n octets de la chaîne src vers la chaîne dst.
 **
-** La fonction memmove() copie len octets de la chaîne src vers la chaîne dst.
 ** Compilation: gcc -Wall -Wextra -Werror ft_memmove.c ft_memcpy.c
 */
 
@@ -23,6 +23,8 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 	unsigned char	*cdest;
 	unsigned char	*csrc;
 
+	if (!dest || !src || !n)
+		return (dest);
 	cdest = (unsigned char *) dest;
 	csrc = (unsigned char *) src;
 	if (cdest > csrc)

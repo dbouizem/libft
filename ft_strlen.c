@@ -3,21 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 19:18:03 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/15 16:43:58 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:16:43 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** ft_strlen -- calcule la longueur d'une chaîne de caractères
-**
-** Le type `size_t` est utilisé pour retourner la longueur, car il
-** représente une taille non signée et est suffisamment grand pour
-** contenir la taille maximale d'un objet en mémoire sur la plateforme
-** cible. Cela garantit que la fonction peut gérer correctement les
-** longues chaînes sur tout système compatible C.
-**
+** ft_strlen -- calcule la longueur d'une chaîne de caractères.
 */
 
 #include "libft.h"

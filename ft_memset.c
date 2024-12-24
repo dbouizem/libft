@@ -3,19 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 19:22:09 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/13 10:53:05 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:22:47 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** ft_memset -- remplit une zone mémoire avec une valeur d'octet
-**
-** La fonction remplit `n` octets de la zone mémoire pointée par `s`
-** avec la valeur d'octet `c`. Cette valeur est convertie en `unsigned char`
-** pour s'assurer qu'elle soit correctement interprétée comme un octet. 
-** La fonction retourne le pointeur d'origine `s`
+** ft_memset - remplit une zone mémoire avec une valeur d'octet.
 **
 **Compilation: gcc -Wall -Wextra -Werror ft_strlen.c ft_strlcpy.c ft_memset.c
 */
@@ -33,7 +29,7 @@ void	*ft_memset(void *s, int c, size_t n)
 }
 /*
 int	main()
-{	
+{
 	char *str = malloc(20 * sizeof(char));
 	if (str == NULL)
 	{

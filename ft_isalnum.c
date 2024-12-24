@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 18:26:35 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/11 18:31:41 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:37:23 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** isalnum -- test de caractères alphanumériques
+** ft_isalnum - test de caractères alphanumériques.
 */
 
 #include "libft.h"

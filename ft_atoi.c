@@ -6,11 +6,12 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 00:08:41 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/01 00:08:46 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:31:34 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** atoi, atoi_l -- convertit la chaîne ASCII en entier
+** ft_atoi - convertit la chaîne ASCII en entier.
 */
 
 #include "libft.h"

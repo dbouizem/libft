@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:52:26 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/15 16:56:09 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:12:31 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** ft_tolower -- convertit une lettre majuscule en minuscule
+** ft_tolower - convertit une lettre majuscule en minuscule.
 */
 
 #include "libft.h"

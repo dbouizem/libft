@@ -6,13 +6,13 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 18:20:14 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/27 18:20:16 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:15:25 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** strstr, strcasestr, strnstr -- localise une sous-chaîne dans une chaîne
-** La fonction strnstr() localise la première occurrence du message terminé
-** par un caractère nul
+** ft_strnstr - localise la première occurrence du message terminé
+** par un caractère nul.
 */
 
 #include "libft.h"
@@ -44,7 +44,7 @@ int	main()
 {
 	char	str[] = "Bonjour Laure !";
 	char	to_find[] = "Laure";
-	
+
 	char	*result = ft_strnstr(str, to_find, 20);
 	if (result)
 		printf("Le mot a trouver se trouve ici : %s\n", result);

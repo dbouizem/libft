@@ -3,20 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:45:31 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/13 11:13:23 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:31:13 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** ft_bzero -- Remplie une zone mémoire avec des zéros
+** ft_bzero - remplie une zone mémoire avec des zéros.
 **
-** La fonction `ft_bzero` remplit les `n` premiers octets de la zone mémoir
-** pointee par `s` avec la valeur zéro. Cette opération est souvent utilisée pour
-** initialiser un espace mémoire avant de l'utiliser.
-**
-** Compilation: gcc -Wall -Wextra -Werror ft_strlen.c ft_strlcpy.c ft_bzero.c 
+** Compilation: gcc -Wall -Wextra -Werror ft_strlen.c ft_strlcpy.c ft_bzero.c
 */
 
 #include "libft.h"

@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbouizem <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 15:22:18 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/16 16:59:02 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:15:38 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** ft_strncmp -- compare les n premiers caractères de deux chaînes
+** ft_strncmp - compare les n premiers caractères de deux chaînes.
 */
 
 #include "libft.h"

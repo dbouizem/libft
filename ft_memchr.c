@@ -6,11 +6,12 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 01:04:14 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/11/26 01:04:15 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/22 07:26:05 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
-** ft_memchar -- recherche la première occurrence d'un caractère dans
+** ft_memchar - recherche la première occurrence d'un caractère dans
 ** une zone memoire
 */
 
