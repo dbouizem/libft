@@ -6,7 +6,7 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 14:02:17 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/22 07:24:18 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/24 19:58:41 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 	unsigned char	*cdest;
 	unsigned char	*csrc;
 
-	if (!dest || !src || !n)
+	if (!dest && !src)
 		return (dest);
 	cdest = (unsigned char *) dest;
 	csrc = (unsigned char *) src;

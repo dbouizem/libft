@@ -6,12 +6,12 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 19:18:03 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/22 07:16:43 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/24 23:14:14 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** ft_strlen -- calcule la longueur d'une chaîne de caractères.
+** ft_strlen - calcule la longueur d'une chaîne de caractères.
 */
 
 #include "libft.h"
