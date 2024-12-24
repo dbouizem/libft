@@ -6,7 +6,7 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 04:25:38 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/23 04:47:04 by dbouizem         ###   ########.fr       */
+/*   Updated: 2024/12/24 18:10:08 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,11 +60,9 @@ static char	**ft_fill_word(char **array, const char *s, char c)
 	{
 		if (*s != c && start == NULL)
 			start = s;
-		else if ((*s == c || *(s + 1) == '\0') && start != NULL)
+		if ((*s == c || *(s + 1) == '\0') && start != NULL)
 		{
-			if (*s == c && start == s)
-				start = NULL;
-			len = s - start + (*(s + 1) == '\0' && *s != c);
+			len = s - start + (*s != c && (*(s + 1) == '\0'));
 			array[i] = ft_substr(start, 0, len);
 			if (!array[i])
 				return (ft_free_all(array, i));
@@ -92,12 +90,13 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (array);
 }
-/*int	main()
+/*
+int	main()
 {
 	char	**result;
 	size_t	i;
 
-	result = ft_split("Testinng my split function", ' ');
+	result = ft_split("ggloirem miod non, mi.", 'i');
 	if (!result)
 	{
 		printf("NULL\n");
