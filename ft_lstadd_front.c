@@ -6,7 +6,7 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 04:48:56 by dbouizem          #+#    #+#             */
-/*   Updated: 2025/01/11 11:14:26 by dbouizem         ###   ########.fr       */
+/*   Updated: 2025/01/22 20:40:06 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (*lst == NULL)
-	{
-		*lst = new;
+	if (!lst || !new)
 		return ;
-	}
 	new->next = *lst;
 	*lst = new;
 }

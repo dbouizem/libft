@@ -6,7 +6,7 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 01:04:14 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/22 07:26:05 by dbouizem         ###   ########.fr       */
+/*   Updated: 2025/01/22 20:19:49 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n--)
 	{
 		if (*ptr == cc)
-			return (ptr);
+			return ((void *)ptr);
 		ptr++;
 	}
 	return (NULL);
