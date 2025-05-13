@@ -6,7 +6,7 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 21:47:35 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/22 07:19:43 by dbouizem         ###   ########.fr       */
+/*   Updated: 2025/04/25 03:31:23 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 ** La fonction `f` prend deux arguments :
 ** - L'index du caractère actuel (unsigned int)
 ** - Un pointeur vers le caractère actuel (char *)
+** Modifie la chaîne d’origine
 **
 ** Compilation: gcc -Wall -Wextra -Werror ft_striteri.c ft_tolower.c
 */

@@ -6,13 +6,14 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 15:36:09 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/22 07:15:54 by dbouizem         ###   ########.fr       */
+/*   Updated: 2025/04/25 03:33:47 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** ft_strmapi - applique une fonction à chaque caractère d'une chaîne
 ** en tenant compte de sa position.
+** Retourne une nouvelle chaîne
 **
 ** Complation: gcc -Wall -Wextra -Werror ft_strmapi.c ft_toupper.c ft_strlen.c
 */

@@ -6,12 +6,13 @@
 /*   By: dbouizem <djihane.bouizem@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 14:02:17 by dbouizem          #+#    #+#             */
-/*   Updated: 2024/12/24 19:58:41 by dbouizem         ###   ########.fr       */
+/*   Updated: 2025/04/22 23:55:12 by dbouizem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** ft_memmove - copie n octets de la chaîne src vers la chaîne dst.
+** ft_memmove - copie n octets de la chaîne src vers la chaîne dst
+** gère le chevauchement.
 **
 ** Compilation: gcc -Wall -Wextra -Werror ft_memmove.c ft_memcpy.c
 */
@@ -27,7 +28,7 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 		return (dest);
 	cdest = (unsigned char *) dest;
 	csrc = (unsigned char *) src;
-	if (cdest > csrc)
+	if (cdest > csrc && cdest < csrc + n)
 	{
 		cdest += n;
 		csrc += n;
