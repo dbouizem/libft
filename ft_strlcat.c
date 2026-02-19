@@ -22,23 +22,20 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	size_t	lend;
 	size_t	lens;
 	size_t	i;
-	size_t	j;
 
-	lend = ft_strlen(dest);
+	lend = 0;
+	while (lend < n && dest[lend])
+		lend++;
 	lens = ft_strlen(src);
-	i = 0;
-	j = lend;
-	if (n == 0)
-		return (lens);
-	if (lend > n)
+	if (lend == n)
 		return (n + lens);
-	while (src[i] && j < n - 1)
+	i = 0;
+	while (src[i] && (lend + i + 1) < n)
 	{
-		dest[j] = src[i];
+		dest[lend + i] = src[i];
 		i++;
-		j++;
 	}
-	dest[j] = '\0';
+	dest[lend + i] = '\0';
 	return (lend + lens);
 }
 /*

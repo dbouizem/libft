@@ -1,4 +1,5 @@
 NAME = libft.a
+OBJ_DIR = obj
 
 SRCS =	ft_isalpha.c \
 	ft_isdigit.c \
@@ -45,10 +46,10 @@ SRCS_BONUS =	ft_lstnew.c \
 	ft_lstiter.c \
 	ft_lstmap.c
 
-OBJS = $(SRCS:.c=.o)
-OBJS_BONUS = $(SRCS_BONUS:.c=.o)
+OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
+OBJS_BONUS = $(addprefix $(OBJ_DIR)/, $(SRCS_BONUS:.c=.o))
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 all : $(NAME)
@@ -56,14 +57,18 @@ all : $(NAME)
 $(NAME) : $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
+$(OBJ_DIR):
+	@mkdir -p $(OBJ_DIR)
+
+$(OBJ_DIR)/%.o: %.c | $(OBJ_DIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus : $(OBJS) $(OBJS_BONUS)
 	@ar rcs $(NAME) $(OBJS) $(OBJS_BONUS)
 
 clean :
-	@rm -f $(OBJS) $(OBJS_BONUS)
+	@rm -rf $(OBJ_DIR)
+	@rm -f *.o
 
 fclean : clean
 	@rm -f $(NAME)
